@@ -2,6 +2,11 @@
 An extension for [pass](https://www.passwordstore.org/) (the standard Unix password manager) to easily create backups of the password store.
 
 
+## Motivation
+
+One should always do backups. So backups must be simple. Nothing more simple than typing ```pass backup```.
+
+
 ## Usage
 
 ```
@@ -27,27 +32,27 @@ Usage:
 
 ## Examples
 
-## Example 1: Using defaults, standard use
+### Example 1: Using defaults, standard use
 ```
 $ pass backup
 ```
 This is the typical usage. This creates a backup and places it into ```$PASSWORD_STORE_DIR/.backups```
             e.g. ```~/.password-store/.backups/passwordstore.190407.122034.tar.gz2```.
 
-## Example 2: Specifying a destination directory
+### Example 2: Specifying a destination directory
 ```
 $ pass backup Documents/Backups/
 ```
 This creates a backup and places it into ```Documents/Backups/```
             i.e. ```Documents/Backups/passwordstore.190407.122034.tar.gz2```.
             
-## Example 3: Specifying a destination file
+### Example 3: Specifying a destination file
 ```
 $ pass backup Documents/Backups/mypassbackup
 ```
 This creates a backup and places it into ```Documents/Backups/mypassbackup.tar.gz2```.
 
-## Installaion
+## Installaiton
 
 For installation download and place this bash script file ```backup.bash``` into
 the passwordstore extension directory specified with ```$PASSWORD_STORE_EXTENSIONS_DIR```.
