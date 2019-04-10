@@ -1,0 +1,17 @@
+PASSWORD_STORE_EXTENSION_COMMANDS+=(backup)
+
+__password_store_extension_complete_backup() {
+  if [[ $COMP_CWORD -gt 2 ]]; then
+    case "${COMP_WORDS[2]}" in
+    help|--help|-h)
+      _pass_complete_entries
+      ;;
+    version|--version|-v)
+      _pass_complete_entries
+      ;;
+    esac
+  else
+      COMPREPLY+=($(compgen -W "help version -h --help -v --version" -- ${cur}))
+      _pass_complete_entries 1
+  fi
+}
