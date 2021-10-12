@@ -52,7 +52,7 @@ $ pass backup Documents/Backups/mypassbackup
 ```
 This creates a backup and places it into ```Documents/Backups/mypassbackup.tar.gz2```.
 
-## Installaiton
+## Installation
 
 For installation download and place this bash script file ```backup.bash``` into
 the passwordstore extension directory specified with ```$PASSWORD_STORE_EXTENSIONS_DIR```.
